@@ -1,3 +1,5 @@
+/* navigation section */
+
 nav{
     background-color: #9D135D ;
     margin-right:10%;
@@ -20,14 +22,13 @@ li{
     font-weight: 400;
 }
 
+/* end nav */
 
+/* hero image! */
 body{
     background-color: #081151 ;
 }
 
-hr {
-    color:#e555a2;
-}
 
 .containerGrid{
     color:aliceblue;
@@ -58,7 +59,7 @@ hr {
 
 .leftSidebar{
     font-weight:800px;
-    color:rgb(86, 93, 230);
+    color:rgb(67, 74, 216);
     grid-column: 3/6;
     grid-row: 2;
     padding-left: 50px;
@@ -117,11 +118,12 @@ ul{
 .button{
     display: flex;
     justify-content: center;
+    padding-bottom: 50px;
 }
 
 button{
     height: 80px;
-    width: 200px;
+    width: 250px;
     background-color: #e555a2;
     color:aliceblue;
     margin: 20px;
@@ -129,6 +131,311 @@ button{
     font-size: larger;
 }
 
+/* end hero Image */
+
+
+/*  
+First attempt at formatting Case Studies! >>>>
+
+.container{
+    background-color: lightblue;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-area:
+        "liftUp" "liftUp" "liftUp"
+        "HSNY" "HMNY" "HMNY"
+        "DofT" "DofT" "DofT"
+        ;
+}
+
+
+.studies{
+    color:#081151;
+    background-color: lightblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+grid-container{
+    display:flex;
+    color: rgb(13, 13, 191);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+}
+
+div #liftUp{
+    color: darkorchid;
+    background-color: yellow;
+    margin:auto;
+    padding: 10px;
+    justify-content: center;
+}
+
+#lu{
+    color: rgb(52, 6, 81);
+}
+
+<<<<<<< End of first attempt;
+*/
+
+/* 
+>>>>>>>> Second attempt;
+
+.title{
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.info{
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+
+
+#lift{
+    justify-content: center;
+    align-content: center;
+    padding: 20px;
+    border: 20px;
+    background-color: yellow;
+}
+
+#humane{
+    justify-content: center;
+    align-content: center;
+    padding: 20px;
+    background-color: salmon;
+}
+
+#treas{
+    justify-content: center;
+    align-content: center;
+    padding: 20px;
+    background-color: white;
+}
+
+third attempt
+
+
+.header{
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: xx-large;
+    color: #152497;
+}
+
+section{
+    background-color: lightblue;
+}
+
+.outer-div{
+    display: flex;
+    align-self: center;
+    width: 65%;
+    margin: 0 auto;
+    border-radius: 10px;
+    background-color: rgb(179, 94, 215);
+    padding: 10px;
+}
+
+#lift{
+    border-radius: 5px;
+    width: 90%;
+    color:purple;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: large;
+    background-color: rgb(238, 238, 163);
+    margin: 0 auto;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+        "title title title"
+        "img info info"
+        "img info info";
+}
+
+.title{
+    grid-area: title;
+    padding-left: 20px;
+    font-size: 48px;
+}
+
+.logo{
+    grid-area: img;
+    padding-top: 30px;
+    padding-left: 20px;
+}
+
+.info{
+    grid-area: info;
+}
+
+
+
+/* Case Studies*/
+
+.header{
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 64px;
+    color: #152497;
+}
+
+section{
+    background-color: lightblue;
+}
+
+#liftup, #humanesoc, #treasd{
+    display:flex;
+    align-content: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin: 0 auto;
+    width: 60%;
+}
+
+#lift{
+    border-radius: 10px;
+    margin: 0 auto;
+    align-content: flex-start;
+    display: grid;
+    grid-template-columns: 1fr 2fr 3fr 1fr;
+    grid-template-areas:
+    "... ... title ..."
+    "... logo info ..."
+    "... ... info ..."
+    ;
+}
+
+#humane, #treas{
+    border-radius: 10px;
+    margin: 0 auto;
+    align-content: flex-start;
+    display: grid;
+    grid-template-columns: 1fr 2fr 3fr 1fr;
+    grid-template-areas:
+    "... title title ..."
+    "... logo info ..."
+    "... ... info ..."
+    ;
+}
+
+#lift{
+    background-color: rgb(249, 249, 157);
+}
+
+#humane{
+    background-color: salmon;
+}
+
+#treas{
+    background-color: #ffff;
+}
+
+
+/*
+#humane{
+    background-color:salmon;
+    border-radius: 10px;
+    margin: 0 auto;
+    align-content: flex-start;
+    display: grid;
+    grid-template-columns: 1fr 2fr 3fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+    "... ... title ..."
+    "... logo info ..."
+    "... ... info ..."
+    ;
+}
+
+#treas{
+    background-color: white;
+    border-radius: 10px;
+    margin: 0 auto;
+    align-content: flex-start;
+    display: grid;
+    grid-template-columns: 1fr 2fr 3fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+    "... ... title ..."
+    "... logo info ..."
+    "... ... info ..."
+    ;
+}
+*/
+
+
+#ltitle, #htitle, #ttitle{
+    grid-area: title;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-top: 20px;
+}
+
+#ltitle{
+    color:#73278a;
+    font-size: 36px;
+    margin: 0;
+}
+
+.subtitle{
+    font-size:32px;
+}
+
+#htitle{
+    color:#ffff;
+    font-size: 24px;
+}
+
+#ttitle{
+    color:#081151;
+    font-size:24px;
+}
+
+#llogo, #hlogo, #tlogo{
+    grid-area: logo;
+    padding-bottom: 50px;
+}
+
+#linfo, #hinfo, #tinfo{
+    grid-area: info;
+    padding-left: 10px;
+    padding-bottom: 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#linfo{
+    color:#73278a;
+}
+
+#hinfo{
+    color:#ffff
+}
+
+#tinfo{
+    color: #081151;
+}
+
+.button2{
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    margin: auto;
+    background-color: lightblue;
+    color:aliceblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+}
+
+/* END CASE STUDIES */
+
+/*footer section*/
 
 .foot{
     display: flex;
@@ -149,9 +456,21 @@ button{
 }
 
 p.contact{
-    padding-left: 200px;
+    display:flex;
+    justify-content: center;
     font-size: 24px;
     color:aliceblue;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+/* Other */
+
+hr{
+    height: 10px;
+}
+
+
+p{
+    margin: auto;
+    padding: 0;
+}
