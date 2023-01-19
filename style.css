@@ -1,3 +1,5 @@
+/* MEDIA QUERIES ARE SET TO 700PX NOT SET TO MOBILE DEVICE */
+
 /* navigation section */
 
 nav{
@@ -208,10 +210,6 @@ section{
     }
 
 }   
-
-
-
-
 
 #lift{
     border-radius: 10px;
@@ -455,6 +453,8 @@ p.contact{
     color:aliceblue;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
+/*End Footer*/
 
 /* Other */
 
