@@ -2,15 +2,30 @@
 
 nav{
     background-color: #9D135D ;
-    margin-right:10%;
-    margin-left:10%;
+    width: 100%;
 }
+
+
+@media screen and (max-width: 700px){
+    nav{
+        width: 50%;
+        background-color: #081151;
+        
+    }
+}
+
 
 ul{
     display:flex;
-    align-content: flex-start;
-    padding-left: 5%;
 }
+
+@media screen and (max-width: 700px){
+    ul{
+        justify-content:center;
+    }
+}
+
+
 
 li{
     display: flex;
@@ -22,6 +37,12 @@ li{
     font-weight: 400;
 }
 
+@media screen and (max-width: 700px){
+    li{
+    display: inline-block;
+    }
+}
+
 /* end nav */
 
 /* hero image! */
@@ -29,6 +50,10 @@ body{
     background-color: #081151 ;
 }
 
+div .containerGrid{
+    justify-content: center;
+    align-content: center;
+}
 
 .containerGrid{
     color:aliceblue;
@@ -36,42 +61,40 @@ body{
     font-size: 48px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     display:grid;
-    align-items:flex-end;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+    grid-template-rows:  1fr 1fr;
     grid-template-areas:
-        "topRow topRow topRow"
-        "leftSidebar rightContent"
-        ;
+        "...topRow topRow rightContent..."
+        " ... ... leftSidebar leftSidebar leftSidebar"
     
 }
+
+@media screen and (max-width: 700px){
+    .containerGrid{
+        font-size: 36px;
+    }
+}
+
 
 .topRow{
     font-weight: bold;
     color:rgb(97, 159, 244);
-    align-items: center;
-    grid-column: 4/6;
-    grid-row: 1;
-    padding: 0;
-    margin: none;
+    grid-area: topRow;
 
 }
 
 .leftSidebar{
     font-weight:800px;
     color:rgb(67, 74, 216);
-    grid-column: 3/6;
-    grid-row: 2;
-    padding-left: 50px;
+    grid-area: leftSidebar;
 
 }
+
 
 .rightContent{
     font-size: larger;
     font-weight: 900;
-    grid-column: 6;
-    grid-row: 1;
-    padding-right: 10px;
+    grid-area: rightContent;
 }
 
 #logo{
@@ -105,6 +128,12 @@ ul{
 
 }
 
+@media screen and (max-width: 700px){
+    .CSA{
+        font-size: 24px;
+    }
+}
+
 
 .blurb{
     color:aliceblue;
@@ -112,6 +141,13 @@ ul{
     padding-right: 30%;
     font-size: 22px;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+@media screen and (max-width: 700px){
+    .blurb{
+        font-size: 18px;
+        padding:0;
+    }
 }
 
 .button{
@@ -145,23 +181,41 @@ button{
     color: #152497;
 }
 
+@media screen and (max-width:700px){
+    .header{
+        font-size: 48px;
+    }
+}
+
 section{
     background-color: lightblue;
 }
 
+
 #liftup, #humanesoc, #treasd{
     display:flex;
     align-content: center;
+    justify-content: center;
     padding-top: 5%;
     padding-bottom: 5%;
     margin: 0 auto;
-    width: 60%;
+    width: 75%;
 }
+
+@media screen and (max-width: 700px){
+    #liftup, #humanesoc, #treasd{
+        width: 100%;
+    }
+
+}   
+
+
+
+
 
 #lift{
     border-radius: 10px;
     margin: 0 auto;
-    align-content: flex-start;
     display: grid;
     grid-template-columns: 1fr 3fr 2fr 3fr 1fr;
     grid-template-areas:
@@ -171,6 +225,13 @@ section{
     "... ... info info ..."
     "... ... full ...  ..."
     ;
+}
+
+@media screen and (max-width:700px){
+    #lift{
+        align-content: center;
+        justify-content: center;
+    }
 }
 
 #humane, #treas{
@@ -192,7 +253,7 @@ section{
 }
 
 #humane{
-    background-color: rgb(245, 99, 106);
+    background-color:rgb(249, 148, 137);
 }
 
 #treas{
@@ -206,23 +267,58 @@ section{
     padding-top: 20px;
 }
 
+
 #ltitle{
     padding-top: 40px;
     margin: 0;
     grid-area: title;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color:#73278a;
+    color:#be31e9;
     font-size: 40px;
 }
+
+@media screen and (max-width:700px){
+    #ltitle{
+        font-size: 20px;
+    }
+}
+
+
 
 .full{
     grid-area: full;
     padding-bottom: 20px;
 }
 
+.caseimg{
+    display:flex;
+    width: 300px;
+    height: 300px;
+}
+
+
+@media screen and (max-width:700px){
+    .caseimg{
+        width: 200px;
+        height: 200px;
+        padding: 10px;
+    }
+}
+
 .button3{
     background-color: rgb(188, 211, 238);
     color:#0d1973;
+    width: 250px;
+    height: 75px;
+    font-size: 24px;
+}
+
+@media screen and (max-width:700px){
+    .button3{
+        width: 125px;
+        height: 65px;
+        font-size: 18px;
+    }
 }
 
 .buttonall{
@@ -230,6 +326,15 @@ section{
     height: 100px;
     font-size: 36px;
 }
+
+@media screen and (max-width:700px){
+   .buttonall{
+        font-size: 18px;
+        width: 300px;
+        height: 75px;
+    }
+}
+
 
 .subtitle{
     grid-area: subt;
@@ -239,24 +344,40 @@ section{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-#ltitle{
-    color:#73278a;
-    font-size: 36px;
-    margin: 0;
-}
 
 .subtitle{
     font-size:32px;
 }
 
+@media screen and (max-width:700px){
+    .subtitle{
+        font-size: 20px;
+    }
+}
+
+
 #htitle{
-    color:#ffff;
+    color:rgb(207, 249, 253);
     font-size: 24px;
+}
+
+@media screen and (max-width:700px){
+    #htitle{
+        font-size: 16px;
+        margin: 0 auto;
+    }
 }
 
 #ttitle{
     color:#081151;
     font-size:24px;
+}
+
+@media screen and (max-width:700px){
+    #ttitle{
+        font-size: 16px;
+        margin: 0 auto;
+    }
 }
 
 #llogo, #hlogo, #tlogo{
@@ -272,12 +393,20 @@ section{
     font-size: 20px;
 }
 
+@media screen and (max-width:700px){
+    #linfo, #hinfo, #tinfo{
+        font-size: 14px;
+    }
+}
+
 #linfo{
     color:#73278a;
+
 }
 
 #hinfo{
-    color:antiquewhite;
+    color:rgb(250, 241, 229);
+
 }
 
 #tinfo{
@@ -295,27 +424,23 @@ section{
     font-size: large;
 }
 
+
 /* END CASE STUDIES */
 
 /*footer section*/
 
 .foot{
-    display: flex;
-    align-content: flex-start;
-    justify-content: flex-start;
+    display: block;
 }
 
 .footer{
+    display: inline-block;
     font-size: 24px;
-    margin: 10px;
-    padding-top: 20px;
-    color:aliceblue;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 10px;
+    margin: 0 auto;
+
 }
 
-.social{
-    margin: 10px;
-}
 
 p.contact{
     display:flex;
