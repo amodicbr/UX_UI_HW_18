@@ -95,9 +95,8 @@ ul{
 
 
 .CSA{
-    color:aliceblue;
-    padding-left: 10px;
-    padding-right: 10px;
+    color:#fbfba5;
+    padding: 20px;
     display: flex;
     justify-content: center;
     font-size: 36px;
@@ -124,6 +123,7 @@ ul{
 button{
     height: 80px;
     width: 250px;
+    border-radius: 20px;
     background-color: #e555a2;
     color:aliceblue;
     margin: 20px;
@@ -134,154 +134,12 @@ button{
 /* end hero Image */
 
 
-/*  
-First attempt at formatting Case Studies! >>>>
-
-.container{
-    background-color: lightblue;
-    display: grid;
-    justify-content: center;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-area:
-        "liftUp" "liftUp" "liftUp"
-        "HSNY" "HMNY" "HMNY"
-        "DofT" "DofT" "DofT"
-        ;
-}
-
-
-.studies{
-    color:#081151;
-    background-color: lightblue;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-grid-container{
-    display:flex;
-    color: rgb(13, 13, 191);
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 16px;
-}
-
-div #liftUp{
-    color: darkorchid;
-    background-color: yellow;
-    margin:auto;
-    padding: 10px;
-    justify-content: center;
-}
-
-#lu{
-    color: rgb(52, 6, 81);
-}
-
-<<<<<<< End of first attempt;
-*/
-
-/* 
->>>>>>>> Second attempt;
-
-.title{
-    grid-column-start: 2;
-    grid-column-end: 3;
-}
-
-.info{
-    grid-column-start: 3;
-    grid-column-end: 5;
-}
-
-
-#lift{
-    justify-content: center;
-    align-content: center;
-    padding: 20px;
-    border: 20px;
-    background-color: yellow;
-}
-
-#humane{
-    justify-content: center;
-    align-content: center;
-    padding: 20px;
-    background-color: salmon;
-}
-
-#treas{
-    justify-content: center;
-    align-content: center;
-    padding: 20px;
-    background-color: white;
-}
-
-third attempt
-
-
-.header{
-    display: flex;
-    justify-content: center;
-    padding: 50px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: xx-large;
-    color: #152497;
-}
-
-section{
-    background-color: lightblue;
-}
-
-.outer-div{
-    display: flex;
-    align-self: center;
-    width: 65%;
-    margin: 0 auto;
-    border-radius: 10px;
-    background-color: rgb(179, 94, 215);
-    padding: 10px;
-}
-
-#lift{
-    border-radius: 5px;
-    width: 90%;
-    color:purple;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: large;
-    background-color: rgb(238, 238, 163);
-    margin: 0 auto;
-    display:grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas:
-        "title title title"
-        "img info info"
-        "img info info";
-}
-
-.title{
-    grid-area: title;
-    padding-left: 20px;
-    font-size: 48px;
-}
-
-.logo{
-    grid-area: img;
-    padding-top: 30px;
-    padding-left: 20px;
-}
-
-.info{
-    grid-area: info;
-}
-
-
-
 /* Case Studies*/
 
 .header{
     display: flex;
     justify-content: center;
-    padding: 50px;
+    padding-top: 30px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 64px;
     color: #152497;
@@ -339,39 +197,6 @@ section{
 }
 
 
-/*
-#humane{
-    background-color:salmon;
-    border-radius: 10px;
-    margin: 0 auto;
-    align-content: flex-start;
-    display: grid;
-    grid-template-columns: 1fr 2fr 3fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas:
-    "... ... title ..."
-    "... logo info ..."
-    "... ... info ..."
-    ;
-}
-
-#treas{
-    background-color: white;
-    border-radius: 10px;
-    margin: 0 auto;
-    align-content: flex-start;
-    display: grid;
-    grid-template-columns: 1fr 2fr 3fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas:
-    "... ... title ..."
-    "... logo info ..."
-    "... ... info ..."
-    ;
-}
-*/
-
-
 #ltitle, #htitle, #ttitle{
     grid-area: title;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -408,6 +233,7 @@ section{
     padding-left: 10px;
     padding-bottom: 50px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
 }
 
 #linfo{
@@ -415,7 +241,7 @@ section{
 }
 
 #hinfo{
-    color:#ffff
+    color:antiquewhite;
 }
 
 #tinfo{
@@ -425,7 +251,7 @@ section{
 .button2{
     display: flex;
     justify-content: center;
-    padding: 50px;
+    padding-bottom: 100px;
     margin: auto;
     background-color: lightblue;
     color:aliceblue;
@@ -466,7 +292,7 @@ p.contact{
 /* Other */
 
 hr{
-    height: 10px;
+    height: 4px;
 }
 
 
