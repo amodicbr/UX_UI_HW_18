@@ -8,23 +8,8 @@ nav{
 }
 
 
-@media screen and (max-width: 700px){
-    nav{
-        width: 50%;
-        background-color: #081151;
-        
-    }
-}
-
-
 ul{
     display:flex;
-}
-
-@media screen and (max-width: 700px){
-    ul{
-        justify-content:center;
-    }
 }
 
 
@@ -39,7 +24,7 @@ li{
     font-weight: 400;
 }
 
-@media screen and (max-width: 700px){
+/*@media screen and (max-width: 700px){
     li{
     display: inline-block;
     }
@@ -71,11 +56,6 @@ div .containerGrid{
     
 }
 
-@media screen and (max-width: 700px){
-    .containerGrid{
-        font-size: 36px;
-    }
-}
 
 
 .topRow{
@@ -130,11 +110,6 @@ ul{
 
 }
 
-@media screen and (max-width: 700px){
-    .CSA{
-        font-size: 24px;
-    }
-}
 
 
 .blurb{
@@ -145,12 +120,6 @@ ul{
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-@media screen and (max-width: 700px){
-    .blurb{
-        font-size: 18px;
-        padding:0;
-    }
-}
 
 .button{
     display: flex;
@@ -183,11 +152,6 @@ button{
     color: #152497;
 }
 
-@media screen and (max-width:700px){
-    .header{
-        font-size: 48px;
-    }
-}
 
 section{
     background-color: lightblue;
@@ -203,13 +167,7 @@ section{
     margin: 0 auto;
     width: 75%;
 }
-
-@media screen and (max-width: 700px){
-    #liftup, #humanesoc, #treasd{
-        width: 100%;
-    }
-
-}   
+  
 
 #lift{
     border-radius: 10px;
@@ -225,12 +183,6 @@ section{
     ;
 }
 
-@media screen and (max-width:700px){
-    #lift{
-        align-content: center;
-        justify-content: center;
-    }
-}
 
 #humane, #treas{
     border-radius: 10px;
@@ -275,12 +227,6 @@ section{
     font-size: 40px;
 }
 
-@media screen and (max-width:700px){
-    #ltitle{
-        font-size: 20px;
-    }
-}
-
 
 
 .full{
@@ -295,13 +241,6 @@ section{
 }
 
 
-@media screen and (max-width:700px){
-    .caseimg{
-        width: 200px;
-        height: 200px;
-        padding: 10px;
-    }
-}
 
 .button3{
     background-color: rgb(188, 211, 238);
@@ -311,26 +250,10 @@ section{
     font-size: 24px;
 }
 
-@media screen and (max-width:700px){
-    .button3{
-        width: 125px;
-        height: 65px;
-        font-size: 18px;
-    }
-}
-
 .buttonall{
     width: 500px;
     height: 100px;
     font-size: 36px;
-}
-
-@media screen and (max-width:700px){
-   .buttonall{
-        font-size: 18px;
-        width: 300px;
-        height: 75px;
-    }
 }
 
 
@@ -347,11 +270,6 @@ section{
     font-size:32px;
 }
 
-@media screen and (max-width:700px){
-    .subtitle{
-        font-size: 20px;
-    }
-}
 
 
 #htitle{
@@ -359,24 +277,13 @@ section{
     font-size: 24px;
 }
 
-@media screen and (max-width:700px){
-    #htitle{
-        font-size: 16px;
-        margin: 0 auto;
-    }
-}
 
 #ttitle{
     color:#081151;
     font-size:24px;
 }
 
-@media screen and (max-width:700px){
-    #ttitle{
-        font-size: 16px;
-        margin: 0 auto;
-    }
-}
+
 
 #llogo, #hlogo, #tlogo{
     grid-area: logo;
@@ -391,11 +298,6 @@ section{
     font-size: 20px;
 }
 
-@media screen and (max-width:700px){
-    #linfo, #hinfo, #tinfo{
-        font-size: 14px;
-    }
-}
 
 #linfo{
     color:#73278a;
@@ -433,12 +335,6 @@ section{
     width: 500px;
 }
 
-@media screen and (max-width:700px){
-    .foot{
-        margin: 0 auto;
-        padding-left: 0px;
-    }
-}
 
 .footer{
     font-size: 24px;
@@ -455,6 +351,93 @@ p.contact{
 }
 
 /*End Footer*/
+
+@media screen and (max-width: 700px){
+    nav{
+        width: 50%;
+        background-color: #081151;
+        
+    }
+
+    ul{
+        justify-content:center;
+    }
+
+    .containerGrid{
+        font-size: 36px;
+    }
+
+    .header{
+        font-size: 48px;
+    }
+
+    li{
+        display: inline-block;
+        }
+
+     .blurb{
+        font-size: 18px;
+        padding:0;
+    }
+
+    
+    .CSA{
+        font-size: 24px;
+    }
+
+
+    .caseimg{
+        width: 200px;
+        height: 200px;
+        padding: 10px;
+    }
+
+    #lift{
+        align-content: center;
+        justify-content: center;
+    }
+
+    #ltitle{
+        font-size: 20px;
+    }
+
+    #htitle{
+        font-size: 16px;
+        margin: 0 auto;
+    }
+
+    #linfo, #hinfo, #tinfo{
+        font-size: 14px;
+    }
+
+    #liftup, #humanesoc, #treasd{
+        width: 100%;
+    }
+
+    .subtitle{
+        font-size: 20px;
+    }
+
+    .buttonall{
+        font-size: 18px;
+        width: 300px;
+        height: 75px;
+    }
+    
+    .button3{
+        width: 125px;
+        height: 65px;
+        font-size: 18px;
+    }
+
+    .foot{
+        margin: 0 auto;
+        padding-left: 0px;
+    }
+
+}
+
+
 
 /* Other */
 
